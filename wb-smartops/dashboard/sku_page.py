@@ -2,7 +2,8 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from api.wb_sales_funnel import get_sales_funnel
-from models.strategy_engine import analyze_strategy
+from wb_smartops.models.strategy_engine import analyze_strategy
+
 
 def render_sku():
     st.title("🔍 SKU 分析中心")
