@@ -1,8 +1,6 @@
 import streamlit as st
-import plotly.express as px
-import pandas as pd
 from api.wb_sales_funnel import get_sales_funnel
-from wb_smartops.models.strategy_engine import analyze_strategy
+from models.strategy_engine import analyze_strategy   # ← 修复路径
 
 
 def render_sku():
