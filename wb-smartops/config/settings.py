@@ -1,3 +1,5 @@
-WB_API_TOKEN = 'eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc5MDA3MDA3LCJpZCI6IjAxOWE4OTNjLTE0MWUtN2VjZi04N2UxLTc5ZjA2MDAxMjIzMiIsImlpZCI6MTk0OTg1NDIsIm9pZCI6MjUwMDE0NjIzLCJzIjoxNjEyNiwic2lkIjoiOGFhZGMxMzMtMzkyNS00ZmFjLWI4MjktMzA1MWQzMGFkNGQzIiwidCI6ZmFsc2UsInVpZCI6MTk0OTg1NDJ9.qBeicaUYJVBpKKp2HE_8RPn0MKgJDc8WGVTUnujzlJVCe5DX4IboFmdMo7pzVY2VfCTl-LYVZyw3sLaGmsfjDQ'
+import streamlit as st
+
+WB_API_TOKEN = st.secrets["WB_API_TOKEN"]
 API_BASE = 'https://seller-analytics-api.wildberries.ru'
 DB_URL = 'sqlite:///wb_smartops.db'
