@@ -1,6 +1,7 @@
 import streamlit as st
 from dashboard.home import render_home
 from dashboard.sku_page import render_sku
+from dashboard.search_page import render_search   # ← 新增
 
 st.set_page_config(
     page_title="WB SmartOps",
@@ -12,7 +13,7 @@ st.set_page_config(
 st.sidebar.title("📦 WB SmartOps")
 page = st.sidebar.radio(
     "选择页面",
-    ["首页", "SKU 分析"],
+    ["首页", "SKU 分析", "搜索词分析"],   # ← 新增菜单项
 )
 
 # Page routing
@@ -20,3 +21,5 @@ if page == "首页":
     render_home()
 elif page == "SKU 分析":
     render_sku()
+elif page == "搜索词分析":       # ← 新增 routing
+    render_search()
