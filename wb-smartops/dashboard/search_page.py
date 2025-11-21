@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from api.wb_search import get_search_stats
+from wb_smartops.api.wb_search import get_search_stats
+
 
 def render_search():
     st.title("🔍 搜索词分析中心")
