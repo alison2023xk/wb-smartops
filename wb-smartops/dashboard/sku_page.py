@@ -1,6 +1,7 @@
 import streamlit as st
 from api.wb_sales_funnel import get_sales_funnel
-from models.strategy_engine import analyze_strategy   # ← 修复路径
+from wb_smartops.models.strategy_engine import analyze_strategy
+
 
 
 def render_sku():
